@@ -2,6 +2,7 @@ import React from "react";
 import heroImg from "public/hero.png";
 import Image from "next/image";
 import styles from "./page.module.css";
+import Button from "@/components/button/Button";
 
 const page = () => {
   return (
@@ -13,7 +14,7 @@ const page = () => {
           Turning your idea to reality, we bring the team from the glob tech
           industry
         </p>
-        <button className={styles.button}>See Our Works</button>
+        <Button link={"/portfolio"} text="See Our Works" /> 
       </div>
       <div className={styles.item}>
         <Image src={heroImg} className={styles.img} alt="hero image" />
